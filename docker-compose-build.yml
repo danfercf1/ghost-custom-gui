@@ -2,6 +2,9 @@ version: '3'
 
 services:
   ghost-custom-gui:
+    build:
+      dockerfile: Dockerfile
+      context: .
     image: danfercf/ghost-custom-gui
     environment:
       API_URL: ${API_URL}
