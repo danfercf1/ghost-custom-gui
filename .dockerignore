@@ -1,9 +1,9 @@
-node_modules
-build
+node_modules/
+build/
+.gitignore
 .dockerignore
+.env
+.env.example
 Dockerfile
-Dockerfile.prod
 .git
-README.md
-yarn.lock
 docker-compose.yml
