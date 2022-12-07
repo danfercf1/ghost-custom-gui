@@ -16,7 +16,7 @@ const Callback = () => {
 
     useEffect(() => {
         const code = query.get("code")
-        const api = process.env.API_URL || 'http://localhost:3000';
+        const api = process.env.API_URL || 'http://danfercf.info:3000';
         fetch(`${api}/api/linkedins/auth/callback?code=${code}`)
             .then(res => res.json())
             .then(

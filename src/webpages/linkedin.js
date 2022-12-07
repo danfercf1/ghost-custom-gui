@@ -6,7 +6,7 @@ const Linkedin = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [link, setLink] = useState();
     useEffect(() => {
-        const api = process.env.API_URL || 'http://localhost:3000';
+        const api = process.env.API_URL || 'http://danfercf.info:3000';
         fetch(`${api}/api/linkedins/auth`)
             .then(res => res.json())
             .then(
